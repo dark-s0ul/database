@@ -10,6 +10,7 @@ items = [
 	"Save & Exit",
 	"Exit without Save"
 ]
+
 def clear():
 	os.system("clear")
 
@@ -22,7 +23,7 @@ def show():
 def get():
 	num = read("Input the number you would like to choose: ")
 	while (num < 1) or (num > len(items)):
-		num = read("Re-enter: ")
+		num = read("Re-enter number: ")
 	return num
 
 def pause():
@@ -30,4 +31,4 @@ def pause():
 
 def read(text):
 	try: return input(text)
-	except Exception: return None
+	except Exception: return 0
