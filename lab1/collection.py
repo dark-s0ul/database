@@ -6,7 +6,6 @@ class Collection(object):
 		self.entries.append(entry)
 
 	def remove(self, entry):
-		if not entry: return False
 		if not (entry in self.entries): return False
 		self.entries.remove(entry)
 		return True
