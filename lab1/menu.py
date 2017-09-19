@@ -21,8 +21,8 @@ def show():
 
 def get():
 	num = read("Input the number you would like to choose: ")
-	while not (num > 1 or num <= len(items)):
-		num = read("Re-enter number: ")
+	while (num < 1) or (num > len(items)):
+		num = read("Re-enter: ")
 	return num
 
 def pause():
