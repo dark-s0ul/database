@@ -79,8 +79,8 @@ def main():
 			else:
 				print "%-15s %-15s | %-15s %-15s %-15s" % ("PC id", "PC name", "GPU id", "GPU vendor", "GPU model")
 				for pc in entries:
-					gpu = gpus.find("gid", id)
-					print "%-15s %-15s | %-15s %-15s %-15s" % (pc.id, pc.name, id, gpu.vendor, gpu.model)
+					gpu = gpus.find("gid", pc.gid)
+					print "%-15s %-15s | %-15s %-15s %-15s" % (pc.id, pc.name, pc.gid, gpu.vendor, gpu.model)
 		elif num == 7: break
 		elif num == 8: return
 		menu.pause()
